@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="how-it-works.css" />
+    <link rel="stylesheet" href="contact-styles.css" />
+
+    <title>Jeff Barra - GitHub Portfolio</title>
+  </head>
+  <body>
+    <!-- NAV BAR SECTION -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="logo.png" alt="" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/jeffbarra" class="nav-link"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/jeffbarra" class="nav-link"
+              >My Projects</a
+            >
+          </li>
+        </ul>
+
+        <!-- HAMBURGER BUTTON -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="hero-heading">Hello! I'm Jeff Barra...</h1>
+          <p class="hero-description">Welcome to my site!</p>
+          <a
+            href="https://www.linkedin.com/in/jeffbarra"
+            class="btn btn--left margin-right-sm"
+            >About Me</a
+          >
+          <a href="https://www.github.com/jeffbarra" class="btn btn--right"
+            >My Projects &darr;</a
+          >
+        </div>
+        <div class="iframe-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/th-BjIEBfzw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <!-- <div class="hero-img-box">
+          <img src="Headshot.jpeg" class="hero-img" alt="hero image" />
+        </div> -->
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION HEADER -->
+    <div class="product-header">
+      <h1 class="product-h1">My Projects</h1>
+    </div>
+
+    <div class="product-container">
+      <div class="product-image">
+        <img src="PacMen.png" alt="Product" />
+        <div class="product-image-overlay">
+          <div class="product-image-title">PacMen</div>
+          <!-- <p class="product-image-description">800 Points</p> -->
+          <button
+            onclick="window.location.href='https://github.com/jeffbarra/PacMen';"
+            class="product-cta-btn"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <img src="Eye Exercise.png" alt="Diapers" />
+        <div class="product-image-overlay">
+          <div class="product-image-title">Eye Exercise</div>
+          <!-- <p class="product-image-description">25 Points</p> -->
+          <button
+            onclick="window.location.href='https://github.com/jeffbarra/Eye-Exercise';"
+            class="product-cta-btn"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <img src="Bus Tracker.png" alt="Product" />
+        <div class="product-image-overlay">
+          <div class="product-image-title">Bus Tracker</div>
+          <!-- <p class="product-image-description">50 Points</p> -->
+          <button
+            onclick="window.location.href='https://github.com/jeffbarra/Real-Time-Bus-Tracker';"
+            class="product-cta-btn"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <img src="Banking App.png" alt="Product" />
+        <div class="product-image-overlay">
+          <div class="product-image-title">Banking App</div>
+          <!-- <p class="product-image-description">30 Points</p> -->
+          <button
+            onclick="window.location.href='https://github.com/jeffbarra/badbankfullstack-app';"
+            class="product-cta-btn"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <img src="Financial Planning.png" alt="Product" />
+        <div class="product-image-overlay">
+          <div class="product-image-title">Finance Firm App</div>
+          <!-- <p class="product-image-description">30 Points</p> -->
+          <button
+            onclick="window.location.href='https://github.com/jeffbarra/react-financial-planning-website';"
+            class="product-cta-btn"
+          >
+            View Project
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="how-it-works-section">
+      <div class="how-it-works-header">
+        <h1 class="how-it-works-h1">About Me</h1>
+      </div>
+
+      <div class="how-it-works-container">
+        <div class="how-it-works-icon">
+          <img src="coding.png" alt="Coding Icon" />
+          <div class="how-it-works-icon-title">Full Stack Developer</div>
+          <p class="how-it-works-description">
+            I am able to successfully create and deploy an app using frontend
+            and backend frameworks like MERN (and more)!
+          </p>
+        </div>
+        <div class="how-it-works-icon">
+          <img src="web-design.png" alt="Web Design Icon" />
+          <div class="how-it-works-icon-title">Website Creation</div>
+          <p class="how-it-works-description">
+            Years of experience with designing and developing websites for all
+            different industries!
+          </p>
+        </div>
+        <div class="how-it-works-icon">
+          <img src="seo.png" alt="Buy Icon" />
+          <div class="how-it-works-icon-title">SEO & Marketing</div>
+          <p class="how-it-works-description">
+            I am skilled in SEO and website marketing, which will help get your
+            website seen by all of the right people!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION -->
+    <section class="contact-section">
+      <div class="contact-header">
+        <h1 class="contact-h1">Contact Me</h1>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-icon">
+          <a href="https://www.github.com/jeffbarra"
+            ><img src="github.png" alt="Coding Icon"
+          /></a>
+          <div class="contact-icon-title">GitHub</div>
+          <!-- <p class="contact-description">
+            Skilled in MERN Stack and more!
+          </p> -->
+        </div>
+        <div class="contact-icon">
+          <a href="https://www.linkedin.com/in/jeffbarra"
+            ><img src="linkedin.png" alt="Web Design Icon"
+          /></a>
+          <div class="contact-icon-title">LinkedIn</div>
+          <!-- <p class="contact-description">
+            Skilled in website creation, design & development!
+          </p> -->
+        </div>
+        <div class="contact-icon">
+          <a href="https://www.facebook.com/jeffdbarra"
+            ><img src="facebook.png" alt="Buy Icon"
+          /></a>
+          <div class="contact-icon-title">Facebook</div>
+          <!-- <p class="how-it-works-description">Skilled in SEO and marketing!</p> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /*font-family: "Poppins", sans-serif;*/
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/** HAMBURGER BUTTON **/
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4484ce;
+}
+
+/** NAV BAR **/
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+/** FONT LINK STYLE **/
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #4484ce;
+}
+
+.nav-logo img {
+  max-width: 6rem;
+  filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.3));
+}
+
+.nav-logo img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/** HAMBURGER BUTTON APPEARS ON MOBILE DEVICES **/
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 8rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.3));
+  }
+
+  .nav-link {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    padding: 1.5rem;
+  }
+
+  .nav-item {
+    margin: 3rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /** HAMBURGER BUTTON ANIMATION **/
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
